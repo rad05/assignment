@@ -23,14 +23,14 @@ function showlist()
 <tr>
 
 <?php
-
+//changes 
 if ($handle = opendir('C:/wamp/www/books/Classics')) 
 {
     while (false !== ($entry = readdir($handle))) 
 	{
         if ($entry != "." && $entry != "..") 
 		{
-            $file = fopen("C:\wamp\www\books\Classics/$entry", "r");
+            $file = fopen("C:/wamp/www/books/Classics/$entry", "r");
 			while(!feof($file))
 			{
 				echo "<td>";
