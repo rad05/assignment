@@ -30,8 +30,7 @@ if ($handle = opendir('C:/wamp/www/books/Classics'))
 	{
         if ($entry != "." && $entry != "..") 
 		{
-            //echo "$entry\n";
-			$file = fopen("C:\wamp\www\books\Classics/$entry", "r");
+            $file = fopen("C:\wamp\www\books\Classics/$entry", "r");
 			while(!feof($file))
 			{
 				echo "<td>";
@@ -40,7 +39,7 @@ if ($handle = opendir('C:/wamp/www/books/Classics'))
 				echo "</td>";
 			}
 
-		echo "</tr>";
+		    echo "</tr>";
         }
 		
     }
